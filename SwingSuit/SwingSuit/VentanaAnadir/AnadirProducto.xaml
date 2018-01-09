@@ -1,0 +1,63 @@
+﻿<Window x:Class="SwingSuit.VentanaAnadir.AnadirProducto"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SwingSuit.VentanaAnadir"
+        mc:Ignorable="d"
+        Title="AnadirCliente" Height="525" Width="1000" ResizeMode="NoResize" ShowInTaskbar="False" WindowStartupLocation="CenterScreen" WindowStyle="None">
+    <Window.Background>
+        <ImageBrush ImageSource="VentanaAñadirProducto.png"/>
+    </Window.Background>
+    <Grid>
+        <Button x:Name="Guardar" Content="Button" HorizontalAlignment="Left" Margin="772,234,0,0" VerticalAlignment="Top" Width="228" Height="82" Click="Anadir_Click">
+            <Button.OpacityMask>
+                <ImageBrush/>
+            </Button.OpacityMask>
+            <Button.Foreground>
+                <ImageBrush/>
+            </Button.Foreground>
+            <Button.BorderBrush>
+                <ImageBrush/>
+            </Button.BorderBrush>
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="Borrar" Content="Button" HorizontalAlignment="Left" Margin="772,325,0,0" VerticalAlignment="Top" Width="228" Height="93" Click="borrar_Click">
+            <Button.OpacityMask>
+                <ImageBrush/>
+            </Button.OpacityMask>
+            <Button.BorderBrush>
+                <ImageBrush/>
+            </Button.BorderBrush>
+            <Button.Foreground>
+                <ImageBrush/>
+            </Button.Foreground>
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="Cancelar" Content="Button" HorizontalAlignment="Left" Margin="772,425,0,0" VerticalAlignment="Top" Width="228" Height="90" Click="atras_Click">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+            <Button.BorderBrush>
+                <ImageBrush/>
+            </Button.BorderBrush>
+            <Button.Foreground>
+                <ImageBrush/>
+            </Button.Foreground>
+            <Button.OpacityMask>
+                <ImageBrush/>
+            </Button.OpacityMask>
+        </Button>
+        <TextBox x:Name="id" HorizontalAlignment="Left" Height="31" Margin="239,94,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="61" Background="#FF595959" CaretBrush="#FF323232" SelectionBrush="Black" Foreground="White" FontFamily="Yu Gothic UI Light" FontSize="16" BorderBrush="#FF232323"/>
+        <TextBox x:Name="marca" HorizontalAlignment="Left" Height="31" Margin="239,154,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="236" Background="#FF595959" CaretBrush="#FF323232" SelectionBrush="Black" Foreground="White" FontFamily="Yu Gothic UI Light" FontSize="16" BorderBrush="#FF232323"/>
+        <TextBox x:Name="tipo" HorizontalAlignment="Left" Height="31" Margin="239,215,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="236" Background="#FF595959" CaretBrush="#FF323232" SelectionBrush="Black" Foreground="White" FontFamily="Yu Gothic UI Light" FontSize="16" BorderBrush="#FF232323"/>
+        <TextBox x:Name="talla" HorizontalAlignment="Left" Height="31" Margin="239,275,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="119" Background="#FF595959" CaretBrush="#FF323232" SelectionBrush="Black" Foreground="White" FontFamily="Yu Gothic UI Light" FontSize="16" BorderBrush="#FF232323"/>
+        <TextBox x:Name="stockActual" HorizontalAlignment="Left" Height="31" Margin="239,337,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="119" Background="#FF595959" CaretBrush="#FF323232" SelectionBrush="Black" Foreground="White" FontFamily="Yu Gothic UI Light" FontSize="16" BorderBrush="#FF232323"/>
+        <TextBox x:Name="stockMinimo" HorizontalAlignment="Left" Height="31" Margin="239,397,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="119" Background="#FF595959" CaretBrush="#FF323232" SelectionBrush="Black" Foreground="White" FontFamily="Yu Gothic UI Light" FontSize="16" BorderBrush="#FF232323"/>
+        <TextBox x:Name="pvp" HorizontalAlignment="Left" Height="31" Margin="239,459,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="236" Background="#FF595959" CaretBrush="#FF323232" SelectionBrush="Black" Foreground="White" FontFamily="Yu Gothic UI Light" FontSize="16" BorderBrush="#FF232323"/>
+    </Grid>
+</Window>

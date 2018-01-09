@@ -1,0 +1,40 @@
+﻿<Window x:Class="SwingSuit.VentanaMostrar.MostrarClente"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="" Height="525" Width="1000" Visibility="Visible" WindowStyle="None">
+    <Window.Background>
+        <ImageBrush ImageSource="VentanaMostrarClientes.png"/>
+    </Window.Background>
+    <Grid>
+        <Button Name="Aceptar" Margin="766,310,-0.4,102.2" Click="Aceptar_Click">
+            <Button.OpacityMask>
+                <ImageBrush/>
+            </Button.OpacityMask>
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Button Name="Atras" Margin="766,421,-0.4,14.4" Click="Atras_Click">
+            <Button.OpacityMask>
+                <ImageBrush/>
+            </Button.OpacityMask>
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <DataGrid x:Name="mostrar" ItemsSource="{Binding cliente}" HorizontalAlignment="Left" Height="398" Margin="30,83,0,0" VerticalAlignment="Top" Width="673" BorderBrush="#FF212121" Background="#FF4C4949"/>
+    </Grid>
+</Window>
