@@ -65,7 +65,7 @@ namespace SwingSuit
         private void Anadir_boton(object sender, RoutedEventArgs e)
         {
 
-            AnadirVenta ac = new AnadirVenta();
+            AnadirProducto ac = new AnadirProducto();
             ac.Show();
             Close();
         }

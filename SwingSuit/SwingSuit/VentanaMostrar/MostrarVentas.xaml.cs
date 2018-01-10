@@ -44,7 +44,7 @@ namespace SwingSuit.VentanaMostrar
 
         private void Atras_Click(object sender, RoutedEventArgs e)
         {
-            VentanaProductos mp = new VentanaProductos();
+            VentanaVentas mp = new VentanaVentas();
             mp.Show();
             Close();
         }

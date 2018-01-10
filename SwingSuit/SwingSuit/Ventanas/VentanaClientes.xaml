@@ -19,7 +19,7 @@
         <ImageBrush ImageSource="/SwingSuit;component/VentanaClientes.png"/>
     </Window.Background>
     <Grid>
-        <Button Content="Mostrar" HorizontalAlignment="Left" Margin="813,395,0,0" VerticalAlignment="Top" Width="110" Height="101" Click="Button_Mostrar">
+        <Button Content="Mostrar" HorizontalAlignment="Left" Margin="813,395,0,0" VerticalAlignment="Top" Width="116" Height="113" Click="Button_Mostrar">
             <Button.OpacityMask>
                 <ImageBrush/>
             </Button.OpacityMask>
@@ -33,7 +33,7 @@
                 <ImageBrush/>
             </Button.Background>
         </Button>
-        <Button Content="Modificar" HorizontalAlignment="Left" Margin="596,395,0,0" VerticalAlignment="Top" Width="110" Height="101" Click="Modificar">
+        <Button Content="Modificar" HorizontalAlignment="Left" Margin="596,395,0,0" VerticalAlignment="Top" Width="110" Height="113" Click="Modificar">
             <Button.OpacityMask>
                 <ImageBrush/>
             </Button.OpacityMask>
@@ -47,7 +47,7 @@
                 <ImageBrush/>
             </Button.Background>
         </Button>
-        <Button Content="Eliminar" HorizontalAlignment="Left" Margin="301,395,0,0" VerticalAlignment="Top" Width="110" Height="101" Click="Button_Click_1">
+        <Button Content="Eliminar" HorizontalAlignment="Left" Margin="301,395,0,0" VerticalAlignment="Top" Width="110" Height="113" Click="Button_Click_1">
             <Button.OpacityMask>
                 <ImageBrush/>
             </Button.OpacityMask>
@@ -61,7 +61,7 @@
                 <ImageBrush/>
             </Button.Background>
         </Button>
-        <Button Content="Anadir" HorizontalAlignment="Left" Margin="70,395,0,0" VerticalAlignment="Top" Width="110" Height="101" Click="Button_Click_2">
+        <Button Content="Anadir" HorizontalAlignment="Left" Margin="70,395,0,0" VerticalAlignment="Top" Width="113" Height="113" Click="Button_Click_2">
             <Button.OpacityMask>
                 <ImageBrush/>
             </Button.OpacityMask>

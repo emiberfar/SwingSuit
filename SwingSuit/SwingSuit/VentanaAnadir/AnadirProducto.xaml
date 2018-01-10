@@ -10,7 +10,7 @@
         <ImageBrush ImageSource="VentanaAñadirProducto.png"/>
     </Window.Background>
     <Grid>
-        <Button x:Name="Guardar" Content="Button" HorizontalAlignment="Left" Margin="772,234,0,0" VerticalAlignment="Top" Width="228" Height="82" Click="Anadir_Click">
+        <Button x:Name="Guardar" Content="Button" HorizontalAlignment="Left" Margin="772,243,0,0" VerticalAlignment="Top" Width="228" Height="98" Click="Anadir_Click">
             <Button.OpacityMask>
                 <ImageBrush/>
             </Button.OpacityMask>
@@ -24,7 +24,7 @@
                 <ImageBrush/>
             </Button.Background>
         </Button>
-        <Button x:Name="Borrar" Content="Button" HorizontalAlignment="Left" Margin="772,325,0,0" VerticalAlignment="Top" Width="228" Height="93" Click="borrar_Click">
+        <Button x:Name="Borrar" Content="Button" HorizontalAlignment="Left" Margin="772,346,0,0" VerticalAlignment="Top" Width="228" Height="93" Click="borrar_Click">
             <Button.OpacityMask>
                 <ImageBrush/>
             </Button.OpacityMask>
@@ -38,7 +38,7 @@
                 <ImageBrush/>
             </Button.Background>
         </Button>
-        <Button x:Name="Cancelar" Content="Button" HorizontalAlignment="Left" Margin="772,425,0,0" VerticalAlignment="Top" Width="228" Height="90" Click="atras_Click">
+        <Button x:Name="Cancelar" Content="Button" HorizontalAlignment="Left" Margin="772,444,0,0" VerticalAlignment="Top" Width="228" Height="98" Click="atras_Click">
             <Button.Background>
                 <ImageBrush/>
             </Button.Background>

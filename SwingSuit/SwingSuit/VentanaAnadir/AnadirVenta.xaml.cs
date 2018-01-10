@@ -29,8 +29,6 @@ namespace SwingSuit.VentanaAnadir
         private void Anadir_Click(object sender, RoutedEventArgs e)
         {
 
-
-
             int IdVenta, IdProducto, IdCliente, Cantidad;
 
 
@@ -47,14 +45,10 @@ namespace SwingSuit.VentanaAnadir
             cmd.ExecuteReader();
             conn.Close();
 
-
-
-
         }
 
         private void borrar_Click(object sender, RoutedEventArgs e)
         {
-
 
             int IdVenta, IdProducto, IdCliente, Cantidad;
 
@@ -71,14 +65,12 @@ namespace SwingSuit.VentanaAnadir
             cmd.CommandText = "DELETE FROM venta WHERE " + "IdVenta =" + IdVenta + " IdProducto = " + idProducto + " AND " + "IdCliente = " + IdCliente + " AND Cantidad = " + Cantidad + "; ";
             conn.Close();
 
-
-
         }
 
         private void atras_Click(object sender, RoutedEventArgs e)
         {
 
-            VentanaProductos mp = new VentanaProductos();
+            VentanaVentas mp = new VentanaVentas();
             mp.Show();
 
             Close();
