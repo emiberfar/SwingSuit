@@ -31,7 +31,6 @@ namespace SwingSuit.VentanaModificar
         {
 
 
-
             int IdVenta,IdProducto,IdCliente,Cantidad;
 
 
@@ -48,9 +47,6 @@ namespace SwingSuit.VentanaModificar
                 " WHERE " + "IdVenta =" + IdVenta + ";";
             cmd.ExecuteReader();
             conn.Close();
-
-
-
 
         }
 
@@ -70,10 +66,8 @@ namespace SwingSuit.VentanaModificar
             MySqlConnection conn = new MySqlConnection(Conector.conexion());
             conn.Open();
             MySqlCommand cmd = conn.CreateCommand();
-            cmd.CommandText = "DELETE FROM venta WHERE " + "IdVenta =" + IdVenta + " IdProducto = " + IdProducto + " AND " + "IdCliente = " + IdCliente + " AND Cantidad = " + Cantidad + "; ";
+            cmd.CommandText = "DELETE FROM venta WHERE " + "IdVenta =" + IdVenta + " IdProducto = " + IdProducto + " , " + "IdCliente = " + IdCliente + " AND Cantidad = " + Cantidad + "; ";
             conn.Close();
-
-
 
         }
 
@@ -86,6 +80,5 @@ namespace SwingSuit.VentanaModificar
             Close();
 
         }
-
     }
 }

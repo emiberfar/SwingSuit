@@ -28,10 +28,6 @@ namespace SwingSuit.VentanaModificar
         }
 
 
-
-
-
-
         private void Anadir_Click(object sender, RoutedEventArgs e)
         {
 
@@ -52,13 +48,10 @@ namespace SwingSuit.VentanaModificar
             conn.Open();
             MySqlCommand cmd = conn.CreateCommand();
             cmd.CommandText = "UPDATE cliente" +
-                " SET" + " Nombre = '" + Nombre + "' AND " + "Apellido = '" + Apellido + "' AND DNI = " + "'" + Dni + "' AND Direccion = " + "'" + Direccion + "' AND Telefono = " + "'" + Telefono +"'"+
+                " SET" + " Nombre = '" + Nombre + "' , " + "Apellido = '" + Apellido + "' AND DNI = " + "'" + Dni + "' AND Direccion = " + "'" + Direccion + "' AND Telefono = " + "'" + Telefono +"'"+
                 " WHERE " + "Id =" + ID + ";";
             cmd.ExecuteReader();
             conn.Close();
-
-
-
 
         }
 
@@ -80,12 +73,8 @@ namespace SwingSuit.VentanaModificar
             MySqlConnection conn = new MySqlConnection(Conector.conexion());
             conn.Open();
             MySqlCommand cmd = conn.CreateCommand();
-            cmd.CommandText = "DELETE FROM cliente WHERE " + "Id =" + ID + " AND" + "Nombre ='" + Nombre + "' AND " + "Apellido ='" + Apellido + "' AND DNI=" + "'" + Dni + "' AND Direccion=" + "'" + Direccion + "' AND Telefono=" + "'" + Telefono + "';";
+            cmd.CommandText = "DELETE FROM cliente WHERE " + "Id =" + ID + " ," + "Nombre ='" + Nombre + "' , " + "Apellido ='" + Apellido + "' AND DNI=" + "'" + Dni + "' AND Direccion=" + "'" + Direccion + "' AND Telefono=" + "'" + Telefono + "';";
             conn.Close();
-
-
-
-
 
         }
 
