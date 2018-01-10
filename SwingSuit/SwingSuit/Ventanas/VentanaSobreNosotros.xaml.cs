@@ -15,13 +15,21 @@ using System.Windows.Shapes;
 namespace SwingSuit.Ventanas
 {
     /// <summary>
-    /// Lógica de interacción para SobreNosotros.xaml
+    /// Lógica de interacción para VentanaSobreNosotros.xaml
     /// </summary>
-    public partial class SobreNosotros : Window
+    public partial class VentanaSobreNosotros : Window
     {
-        public SobreNosotros()
+        public VentanaSobreNosotros()
         {
             InitializeComponent();
+        }
+
+        private void Cerrar_Click(object sender, RoutedEventArgs e)
+        {
+            MenuPrincipal mp = new MenuPrincipal();
+            mp.Show();
+
+            Close();
         }
     }
 }

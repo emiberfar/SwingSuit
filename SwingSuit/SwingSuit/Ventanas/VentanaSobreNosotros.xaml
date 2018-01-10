@@ -1,28 +1,29 @@
-﻿<Window x:Class="SwingSuit.Ventanas.SobreNosotros"
+﻿<Window x:Class="SwingSuit.Ventanas.VentanaSobreNosotros"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SwingSuit.Ventanas"
         mc:Ignorable="d"
-        Title="SobreNosotros" Height="562" Width="1000" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowStyle="None">
+        Title="VentanaSobreNosotros" Height="505" Width="900" WindowStyle="None" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
     <Window.Background>
         <ImageBrush ImageSource="SobreNosotros.png"/>
     </Window.Background>
     <Grid>
-        <Button x:Name="Cerrar" Content="Button" HorizontalAlignment="Left" Margin="463,465,0,0" VerticalAlignment="Top" Width="85" Height="87">
-            <Button.OpacityMask>
-                <ImageBrush/>
-            </Button.OpacityMask>
+        <Button x:Name="Cerrar" Content="Button" HorizontalAlignment="Left" Height="78" Margin="417,417,0,0" VerticalAlignment="Top" Width="80" Click="Cerrar_Click">
             <Button.BorderBrush>
                 <ImageBrush/>
             </Button.BorderBrush>
             <Button.Foreground>
                 <ImageBrush/>
             </Button.Foreground>
+            <Button.OpacityMask>
+                <ImageBrush/>
+            </Button.OpacityMask>
             <Button.Background>
                 <ImageBrush/>
             </Button.Background>
         </Button>
+
     </Grid>
 </Window>

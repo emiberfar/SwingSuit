@@ -60,11 +60,11 @@ namespace SwingSuit
 
         private void SobreNosotros_Click(object sender, RoutedEventArgs e)
         {
-            /*
-            SobreNosotros ss = new SobreNosotros();
-            ss.Show();
+         
+            VentanaSobreNosotros vss = new VentanaSobreNosotros();
+            vss.Show();
             Close();
-            */
+          
         }
 
         private void informes_Click(object sender, RoutedEventArgs e)

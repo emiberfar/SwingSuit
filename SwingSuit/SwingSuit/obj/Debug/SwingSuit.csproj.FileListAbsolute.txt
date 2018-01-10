@@ -153,7 +153,6 @@ C:\Users\Shiro\Documents\GitHub\SwingSuit\SwingSuit\SwingSuit\obj\Debug\SwingSui
 C:\Users\Shiro\Documents\GitHub\SwingSuit\SwingSuit\SwingSuit\obj\Debug\VentanaMostrar\MostrarClente.baml
 C:\Users\Shiro\Documents\GitHub\SwingSuit\SwingSuit\SwingSuit\obj\Debug\Ventanas\Window1.baml
 C:\Users\Shiro\Documents\GitHub\SwingSuit\SwingSuit\SwingSuit\obj\Debug\MenuPrincipal\MenuPrincipal.g.cs
-C:\Users\Shiro\Documents\GitHub\SwingSuit\SwingSuit\SwingSuit\obj\Debug\SobreNosotros\SobreNosotros.g.cs
 C:\Users\Shiro\Documents\GitHub\SwingSuit\SwingSuit\SwingSuit\obj\Debug\VentanaAnadir\AnadirCliente.g.cs
 C:\Users\Shiro\Documents\GitHub\SwingSuit\SwingSuit\SwingSuit\obj\Debug\VentanaAnadir\AnadirProducto.g.cs
 C:\Users\Shiro\Documents\GitHub\SwingSuit\SwingSuit\SwingSuit\obj\Debug\VentanaAnadir\AnadirVenta.g.cs
@@ -246,8 +245,11 @@ C:\Users\Shiro\Documents\GitHub\SwingSuit\SwingSuit\SwingSuit\obj\Debug\VentanaM
 C:\Users\Shiro\Documents\GitHub\SwingSuit\SwingSuit\SwingSuit\obj\Debug\Ventanas\VentanaClientes.baml
 C:\Users\Shiro\Documents\GitHub\SwingSuit\SwingSuit\SwingSuit\obj\Debug\Ventanas\VentanaProductos.baml
 C:\Users\Shiro\Documents\GitHub\SwingSuit\SwingSuit\SwingSuit\obj\Debug\Ventanas\VentanaVentas.baml
-C:\Users\Shiro\Documents\GitHub\SwingSuit\SwingSuit\SwingSuit\obj\Debug\SobreNosotros\SobreNosotros.baml
 C:\Users\Shiro\Documents\GitHub\SwingSuit\SwingSuit\SwingSuit\obj\Debug\SwingSuit.g.resources
 C:\Users\Shiro\Documents\GitHub\SwingSuit\SwingSuit\SwingSuit\obj\Debug\SwingSuit.Properties.Resources.resources
 C:\Users\Shiro\Documents\GitHub\SwingSuit\SwingSuit\SwingSuit\obj\Debug\SwingSuit.csproj.GenerateResource.Cache
 C:\Users\Shiro\Documents\GitHub\SwingSuit\SwingSuit\SwingSuit\obj\Debug\SwingSuit.csproj.CoreCompileInputs.cache
+C:\Users\Shiro\Documents\GitHub\SwingSuit\SwingSuit\SwingSuit\obj\Debug\Ventanas\VentanaInformes.g.cs
+C:\Users\Shiro\Documents\GitHub\SwingSuit\SwingSuit\SwingSuit\obj\Debug\Ventanas\VentanaInformes.baml
+C:\Users\Shiro\Documents\GitHub\SwingSuit\SwingSuit\SwingSuit\obj\Debug\Ventanas\VentanaSobreNosotros.g.cs
+C:\Users\Shiro\Documents\GitHub\SwingSuit\SwingSuit\SwingSuit\obj\Debug\Ventanas\VentanaSobreNosotros.baml
