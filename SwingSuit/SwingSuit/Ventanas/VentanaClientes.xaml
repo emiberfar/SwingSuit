@@ -75,7 +75,7 @@
                 <ImageBrush/>
             </Button.Background>
         </Button>
-        <Button Content="Salir" HorizontalAlignment="Left" Margin="465,271,0,0" VerticalAlignment="Top" Width="77" Height="80" Click="Button_Click">
+        <Button Content="Salir" HorizontalAlignment="Left" Margin="465,271,0,0" VerticalAlignment="Top" Width="90" Height="85" Click="Button_Click">
             <Button.OpacityMask>
                 <ImageBrush/>
             </Button.OpacityMask>

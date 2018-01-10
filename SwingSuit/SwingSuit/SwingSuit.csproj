@@ -107,6 +107,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="SobreNosotros\SobreNosotros.xaml.cs">
+      <DependentUpon>SobreNosotros.xaml</DependentUpon>
+    </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
     <Compile Include="VentanaAnadir\AnadirCliente.xaml.cs">
       <DependentUpon>AnadirCliente.xaml</DependentUpon>
@@ -157,6 +160,10 @@
       <DependentUpon>Window1.xaml</DependentUpon>
     </Compile>
     <Page Include="MenuPrincipal\MenuPrincipal.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SobreNosotros\SobreNosotros.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -318,9 +325,6 @@
     <Resource Include="VentanaMostrar\VentanaMostrarProductos.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="VentanaEliminar\VentanaEliminarProducto.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="VentanaModificar\VentanaEditarProducto.png" />
   </ItemGroup>
   <ItemGroup>
@@ -330,15 +334,14 @@
     <Resource Include="VentanaMostrar\VentanaMostrarVentas.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="VentanaEliminar\VentanaEliminarVenta.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="VentanaModificar\VentanaEditarVentas.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="VentanaAnadir\VentanaAñadirVentas.png" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="VentanaEliminar\VentanaEliminarVentas.png" />
+    <Resource Include="VentanaEliminar\VentanaEliminarProductos.png" />
     <Resource Include="docs\MySqlTransaction.xml" />
     <Resource Include="docs\MySqlParameterCollection.xml" />
     <Resource Include="docs\MySqlParameter.xml" />
@@ -351,6 +354,7 @@
     <Resource Include="docs\MySqlCommandBuilder.xml" />
     <Resource Include="docs\MySqlCommand.xml" />
     <Resource Include="MenuPrincipal\Menu Principal.png" />
+    <Resource Include="SobreNosotros\SobreNosotros.png" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

@@ -57,5 +57,14 @@ namespace SwingSuit
             Close();
 
         }
+
+        private void SobreNosotros_Click(object sender, RoutedEventArgs e)
+        {
+            /*
+            SobreNosotros ss = new SobreNosotros();
+            ss.Show();
+            Close();
+            */
+        }
     }
 }

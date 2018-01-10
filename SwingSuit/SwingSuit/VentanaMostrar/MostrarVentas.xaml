@@ -5,12 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SwingSuit.VentanaMostrar"
         mc:Ignorable="d"
-        Title="MostrarVentas" Height="525" Width="1000">
+        Title="MostrarVentas" Height="562" Width="1000" WindowStyle="None" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
     <Window.Background>
         <ImageBrush ImageSource="VentanaMostrarVentas.png"/>
     </Window.Background>
     <Grid>
-        <Button x:Name="Aceptar" Margin="766,310,-0.4,102.2" Click="Aceptar_Click">
+        <Button x:Name="Aceptar" Margin="766,350,0,116" Click="Aceptar_Click">
             <Button.OpacityMask>
                 <ImageBrush/>
             </Button.OpacityMask>
@@ -23,7 +23,7 @@
                 </TransformGroup>
             </Button.RenderTransform>
         </Button>
-        <Button x:Name="Atras" Margin="766,398,-0.4,10.2" Click="Atras_Click">
+        <Button x:Name="Atras" Margin="766,451,0,10" Click="Atras_Click">
             <Button.OpacityMask>
                 <ImageBrush/>
             </Button.OpacityMask>
@@ -36,7 +36,7 @@
                 </TransformGroup>
             </Button.RenderTransform>
         </Button>
-        <DataGrid x:Name="mostrar" ItemsSource="{Binding cliente}" HorizontalAlignment="Left" Height="368" Margin="37,85,0,0" VerticalAlignment="Top" Width="673" BorderBrush="#FF212121" Background="#FF4C4949"/>
+        <DataGrid x:Name="mostrar" ItemsSource="{Binding cliente}" HorizontalAlignment="Left" Height="435" Margin="42,92,0,0" VerticalAlignment="Top" Width="672" BorderBrush="#FF212121" Background="#FF4C4949"/>
 
     </Grid>
 </Window>

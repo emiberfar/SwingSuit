@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="AnadirCliente" Height="562" Width="1000" ResizeMode="NoResize" ShowInTaskbar="False" WindowStartupLocation="CenterScreen" WindowStyle="None">
     <Window.Background>
-        <ImageBrush ImageSource="VentanaEliminarProducto.png"/>
+        <ImageBrush ImageSource="VentanaEliminarProductos.png"/>
     </Window.Background>
     <Grid>
         <TextBox x:Name="id" HorizontalAlignment="Left" Height="31" Margin="217,117,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="61" Background="#FF595959" CaretBrush="#FF323232" SelectionBrush="Black" Foreground="White" FontFamily="Yu Gothic UI Light" FontSize="16" BorderBrush="#FF232323"/>
@@ -54,7 +54,7 @@
                 <ImageBrush/>
             </Button.OpacityMask>
         </Button>
-        <DataGrid x:Name="mostrar" ItemsSource="{Binding cliente}" HorizontalAlignment="Left" Height="243" Margin="35,277,0,0" VerticalAlignment="Top" Width="673" BorderBrush="#FF212121" Background="#FF4C4949"/>
+        <DataGrid x:Name="mostrar" ItemsSource="{Binding cliente}" HorizontalAlignment="Left" Height="258" Margin="35,271,0,0" VerticalAlignment="Top" Width="679" BorderBrush="#FF212121" Background="#FF4C4949"/>
 
     </Grid>
 </Window>

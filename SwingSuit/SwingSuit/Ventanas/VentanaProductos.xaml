@@ -5,8 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SwingSuit"
         mc:Ignorable="d"
-        Title="VentanaProductos" Height="562   " Width="1000
-        " WindowStyle="None">
+        Title="VentanaProductos" Height="562   " Width="1000" WindowStyle="None" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
     <Window.Background>
         <ImageBrush ImageSource="VentanaProductos.png"/>
     </Window.Background>
