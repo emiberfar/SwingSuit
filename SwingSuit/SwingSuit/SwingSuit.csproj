@@ -363,6 +363,7 @@
     <Resource Include="docs\MySqlCommand.xml" />
     <Resource Include="MenuPrincipal\Menu Principal.png" />
     <Resource Include="Ventanas\SobreNosotros.png" />
+    <Resource Include="MenuPrincipal\diamond.png" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

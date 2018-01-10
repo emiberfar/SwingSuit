@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SwingSuit.Ventanas"
         mc:Ignorable="d"
-        Title="VentanaInformes" Height="562" Width="1000" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowStyle="None">
+        Title="VentanaInformes" Height="562" Width="1000" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowStyle="None" Icon="/SwingSuit;component/MenuPrincipal/diamond.png">
     <Window.Background>
         <ImageBrush ImageSource="VentanaInformes.png"/>
     </Window.Background>

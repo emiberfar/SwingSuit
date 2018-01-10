@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SwingSuit"
         mc:Ignorable="d"
-        Title="MenuPrincipal" Height="562" Width="1000" WindowStyle="None" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+        Title="MenuPrincipal" Height="562" Width="1000" WindowStyle="None" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Icon="diamond.png">
     <Window.Background>
         <ImageBrush ImageSource="Menu Principal.png"/>
     </Window.Background>
