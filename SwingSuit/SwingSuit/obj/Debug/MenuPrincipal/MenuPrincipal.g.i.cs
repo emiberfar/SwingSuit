@@ -157,6 +157,12 @@ namespace SwingSuit {
             return;
             case 5:
             this.informes = ((System.Windows.Controls.Button)(target));
+            
+            #line 80 "..\..\..\MenuPrincipal\MenuPrincipal.xaml"
+            this.informes.Click += new System.Windows.RoutedEventHandler(this.informes_Click);
+            
+            #line default
+            #line hidden
             return;
             case 6:
             this.SobreNosotros = ((System.Windows.Controls.Button)(target));

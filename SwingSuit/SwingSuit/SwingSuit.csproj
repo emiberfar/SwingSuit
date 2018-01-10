@@ -150,6 +150,9 @@
     <Compile Include="Ventanas\VentanaClientes.xaml.cs">
       <DependentUpon>VentanaClientes.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Ventanas\VentanaInformes.xaml.cs">
+      <DependentUpon>VentanaInformes.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Ventanas\VentanaProductos.xaml.cs">
       <DependentUpon>VentanaProductos.xaml</DependentUpon>
     </Compile>
@@ -224,6 +227,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Ventanas\VentanaClientes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Ventanas\VentanaInformes.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

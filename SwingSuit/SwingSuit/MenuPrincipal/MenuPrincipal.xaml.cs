@@ -66,5 +66,12 @@ namespace SwingSuit
             Close();
             */
         }
+
+        private void informes_Click(object sender, RoutedEventArgs e)
+        {
+            VentanaInformes vi = new VentanaInformes();
+            vi.Show();
+            Close();
+        }
     }
 }

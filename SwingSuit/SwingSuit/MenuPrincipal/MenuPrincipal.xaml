@@ -77,7 +77,7 @@
                 <ImageBrush/>
             </Button.Background>
         </Button>
-        <Button x:Name="informes" Content="Button" HorizontalAlignment="Left" Height="111" Margin="696,363,0,0" VerticalAlignment="Top" Width="304">
+        <Button x:Name="informes" Content="Button" HorizontalAlignment="Left" Height="111" Margin="696,363,0,0" VerticalAlignment="Top" Width="304" Click="informes_Click">
             <Button.OpacityMask>
                 <ImageBrush/>
             </Button.OpacityMask>
