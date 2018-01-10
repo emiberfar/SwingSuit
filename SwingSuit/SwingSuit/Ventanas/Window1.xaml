@@ -1,0 +1,14 @@
+﻿<Window x:Class="SwingSuit.Ventanas.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:rv="clr-namespace:Microsoft.Reporting.WinForms;assembly=Microsoft.ReportViewer.WinForms" 
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <WindowsFormsHost HorizontalAlignment="Left" Height="100" Margin="141,75,0,0" VerticalAlignment="Top" Width="100" >
+
+            <rv:ReportViewer x:Name="Report"></rv:ReportViewer>
+        
+        </WindowsFormsHost>
+
+    </Grid>
+</Window>
