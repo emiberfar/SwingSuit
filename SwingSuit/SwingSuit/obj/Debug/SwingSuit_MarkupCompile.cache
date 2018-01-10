@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\Users\emilio\Documents\GitHub\SwingSuit\SwingSuit\SwingSuit\obj\Debug\
+C:\Users\almov\Source\Repos\SwingSuit\SwingSuit\SwingSuit\obj\Debug\
 SwingSuit
 none
 false
 DEBUG;TRACE
-C:\Users\emilio\Documents\GitHub\SwingSuit\SwingSuit\SwingSuit\App.xaml
+C:\Users\almov\Source\Repos\SwingSuit\SwingSuit\SwingSuit\App.xaml
 17-1182025949
 51001242449
-27-656960629
-90281070951
+2793462779
+90-1597522721
 MenuPrincipal\MenuPrincipal.xaml;VentanaAnadir\AnadirCliente.xaml;VentanaAnadir\AnadirProducto.xaml;VentanaAnadir\AnadirVenta.xaml;VentanaEliminar\EliminarCliente.xaml;VentanaEliminar\EliminarProducto.xaml;VentanaEliminar\EliminarVenta.xaml;VentanaModificar\ModificarCliente.xaml;VentanaModificar\ModificarProducto.xaml;VentanaModificar\ModificarVenta.xaml;VentanaMostrar\MostrarClente.xaml;VentanaMostrar\MostrarProducto.xaml;VentanaMostrar\MostrarVentas.xaml;Ventanas\VentanaClientes.xaml;Ventanas\VentanaProductos.xaml;Ventanas\VentanaVentas.xaml;Ventanas\Window1.xaml;
 
 True

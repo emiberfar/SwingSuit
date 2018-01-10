@@ -251,6 +251,36 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="banadorDataSet.xsc">
+      <DependentUpon>banadorDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="banadorDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="banadorDataSet.xss">
+      <DependentUpon>banadorDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="banadorDataSet1.xsc">
+      <DependentUpon>banadorDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="banadorDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="banadorDataSet1.xss">
+      <DependentUpon>banadorDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

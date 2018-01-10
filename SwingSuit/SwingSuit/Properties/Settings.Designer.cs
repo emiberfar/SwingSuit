@@ -64,5 +64,15 @@ namespace SwingSuit.Properties {
                 return ((string)(this["banadorConnectionString3"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("server=localhost;user id=root;password=root;database=banador")]
+        public string banadorConnectionString4 {
+            get {
+                return ((string)(this["banadorConnectionString4"]));
+            }
+        }
     }
 }
