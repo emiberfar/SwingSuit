@@ -6,15 +6,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SwingSuit"
         mc:Ignorable="d"
-        Title="MenuPrincipal" Height="562" Width="1000" WindowStyle="None" ResizeMode="NoResize">
+        Title="MenuPrincipal" Height="562" Width="1000" WindowStyle="None" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
     <Window.Background>
-        <ImageBrush/>
+        <ImageBrush ImageSource="Menu Principal.png"/>
     </Window.Background>
     <Grid>
         <Grid.Background>
             <ImageBrush ImageSource="Menu Principal.png"/>
         </Grid.Background>
-        <Button Name="Cliente" Margin="696,27,-0.4,419.2" Click="Cliente_Click" RenderTransformOrigin="0.5,0.5">
+        <Button Name="Cliente" Margin="696,0,0,457" Click="Cliente_Click" RenderTransformOrigin="0.5,0.5">
             <Button.OpacityMask>
                 <ImageBrush/>
             </Button.OpacityMask>
@@ -36,7 +36,7 @@
                 <ImageBrush/>
             </Button.Background>
         </Button>
-        <Button Name="Producto" Margin="696,141,-0.4,293.2" Click="Producto_Click">
+        <Button Name="Producto" Margin="696,110,0,324" Click="Producto_Click">
             <Button.BorderBrush>
                 <ImageBrush/>
             </Button.BorderBrush>
@@ -50,7 +50,7 @@
                 <ImageBrush/>
             </Button.Background>
         </Button>
-        <Button Name="Ventas" Margin="696,267,-0.4,175.2" Click="Ventas_Click">
+        <Button Name="Ventas" Margin="696,238,0,204" Click="Ventas_Click">
             <Button.BorderBrush>
                 <ImageBrush/>
             </Button.BorderBrush>
@@ -64,7 +64,21 @@
                 <ImageBrush/>
             </Button.Background>
         </Button>
-        <Button Name="Salir" Margin="818,444,-0.4,30.2" Click="Salir_Click">
+        <Button Name="Salir" Margin="818,474,0,0" Click="Salir_Click">
+            <Button.OpacityMask>
+                <ImageBrush/>
+            </Button.OpacityMask>
+            <Button.Foreground>
+                <ImageBrush/>
+            </Button.Foreground>
+            <Button.BorderBrush>
+                <ImageBrush/>
+            </Button.BorderBrush>
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="informes" Content="Button" HorizontalAlignment="Left" Height="111" Margin="696,363,0,0" VerticalAlignment="Top" Width="304">
             <Button.OpacityMask>
                 <ImageBrush/>
             </Button.OpacityMask>

@@ -294,9 +294,6 @@
     <Resource Include="Ventanas\VentanaClientes.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="MenuPrincipal\Menu Principal.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Ventanas\VentanaProductos.png" />
   </ItemGroup>
   <ItemGroup>
@@ -353,6 +350,7 @@
     <Resource Include="docs\MySqlConnection.xml" />
     <Resource Include="docs\MySqlCommandBuilder.xml" />
     <Resource Include="docs\MySqlCommand.xml" />
+    <Resource Include="MenuPrincipal\Menu Principal.png" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
