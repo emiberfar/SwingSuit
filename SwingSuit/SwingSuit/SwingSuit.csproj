@@ -347,6 +347,7 @@
     <Resource Include="VentanaAnadir\VentanaAñadirVentas.png" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="Ventanas\VentanaInformes.png" />
     <Resource Include="VentanaEliminar\VentanaEliminarVentas.png" />
     <Resource Include="VentanaEliminar\VentanaEliminarProductos.png" />
     <Resource Include="docs\MySqlTransaction.xml" />

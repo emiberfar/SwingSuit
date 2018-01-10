@@ -23,5 +23,18 @@ namespace SwingSuit.Ventanas
         {
             InitializeComponent();
         }
+
+        private void Cerrar_Click(object sender, RoutedEventArgs e)
+        {
+            MenuPrincipal mp = new MenuPrincipal();
+            mp.Show();
+
+            Close();
+        }
+
+        private void Anadir_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
