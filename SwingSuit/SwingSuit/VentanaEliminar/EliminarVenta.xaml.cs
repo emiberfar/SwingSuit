@@ -29,15 +29,16 @@ namespace SwingSuit.VentanaEliminar
         private void Anadir_Click(object sender, RoutedEventArgs e)
         {
 
-            int ID;
-            string Nombre;
+            int ID,IdCliente;
+            
 
             ID = Convert.ToInt32(id.Text);
-            Nombre = nombre.Text;
+            IdCliente = Convert.ToInt32(idCliente.Text);
+
 
             MySqlConnection conn = new MySqlConnection(Conector.conexion());
             MySqlCommand cmd = conn.CreateCommand();
-            cmd.CommandText = "SELECT v.IdVenta,v.IdProducto,v.IdCliente,v.Cantidad FROM venta as v, cliente as c WHERE v.IdCliente=c.Id AND c.Id=" + ID + " AND c.Nombre='" + Nombre + "';";
+            cmd.CommandText = "SELECT IdVenta,IdProducto,IdCliente,Cantidad FROM venta WHERE idVenta=" + ID + " AND IdCliente" + idCliente + ";";
             conn.Open();
             mostrar.ItemsSource = cmd.ExecuteReader();
 
@@ -45,18 +46,18 @@ namespace SwingSuit.VentanaEliminar
 
         private void borrar_Click(object sender, RoutedEventArgs e)
         {
-            int ID;
-            string Nombre;
+            int ID, IdCliente;
+
 
             ID = Convert.ToInt32(id.Text);
-            Nombre = nombre.Text;
+            IdCliente = Convert.ToInt32(idCliente.Text);
 
 
 
             MySqlConnection conn = new MySqlConnection(Conector.conexion());
             conn.Open();
             MySqlCommand cmd = conn.CreateCommand();
-            cmd.CommandText = "DELETE FROM venta WHERE IdCliente IN(SELECT Id FROM  cliente as c WHERE c.Id=" + ID + " AND c.Nombre='" + Nombre + "')";
+            cmd.CommandText = "DELETE FROM venta WHERE IdVenta="+ID+" AND IdCliente=" + idCliente + ";";
             cmd.ExecuteReader();
             conn.Close();
         }

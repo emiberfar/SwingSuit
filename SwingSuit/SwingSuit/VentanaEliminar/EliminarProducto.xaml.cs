@@ -31,15 +31,15 @@ namespace SwingSuit.VentanaEliminar
         {
 
             int ID;
-            string Nombre;
+            string Marca;
 
             ID = Convert.ToInt32(id.Text);
-            Nombre = nombre.Text;
+            Marca = marca.Text;
 
 
             MySqlConnection conn = new MySqlConnection(Conector.conexion());
             MySqlCommand cmd = conn.CreateCommand();
-            cmd.CommandText = "SELECT p.Id,p.Marca,p.Tipo,p.Talla FROM producto as p,cliente as c, venta as v WHERE p.Id = v.IdProducto AND v.IdCliente = c.Id AND c.Id=" + ID + " AND c.Nombre='" + Nombre + "';";
+            cmd.CommandText = "SELECT Id,Marca,Tipo,Talla FROM producto WHERE Id=" + ID + " AND Marca='" + Marca + "';";
             conn.Open();
             mostrar.ItemsSource = cmd.ExecuteReader();
 
@@ -48,17 +48,17 @@ namespace SwingSuit.VentanaEliminar
         private void borrar_Click(object sender, RoutedEventArgs e)
         {
             int ID;
-            string Nombre;
+            string Marca;
 
             ID = Convert.ToInt32(id.Text);
-            Nombre = nombre.Text;
+            Marca = marca.Text;
 
 
             MySqlConnection conn = new MySqlConnection(Conector.conexion());
             conn.Open();
             MySqlCommand cmd = conn.CreateCommand();
             cmd.CommandText = "DELETE  FROM producto "+
-                "WHERE Id IN (SELECT v.IdProducto FROM cliente as c, venta as v WHERE v.IdCliente=c.Id AND c.Id ="+ID+");";
+                "WHERE Id="+ID+" AND Marca='"+Marca+"';";
             cmd.ExecuteReader();
             conn.Close();
         }
