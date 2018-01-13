@@ -126,7 +126,7 @@ namespace SwingSuit.VentanaModificar
 
         }
 
-        private void stockminimo_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        private void stockMinimo_PreviewTextInput(object sender, TextCompositionEventArgs e)
         {
 
             Regex regex = new Regex("[^0-9]+");

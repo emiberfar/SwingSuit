@@ -89,19 +89,5 @@
                 <ImageBrush/>
             </Button.Background>
         </Button>
-        <Button Content="Mostrar" HorizontalAlignment="Left" Margin="432,24,0,0" VerticalAlignment="Top" Width="110" Height="101" Click="Button_report">
-            <Button.OpacityMask>
-                <ImageBrush/>
-            </Button.OpacityMask>
-            <Button.Foreground>
-                <ImageBrush/>
-            </Button.Foreground>
-            <Button.BorderBrush>
-                <ImageBrush/>
-            </Button.BorderBrush>
-            <Button.Background>
-                <ImageBrush/>
-            </Button.Background>
-        </Button>
     </Grid>
 </Window>

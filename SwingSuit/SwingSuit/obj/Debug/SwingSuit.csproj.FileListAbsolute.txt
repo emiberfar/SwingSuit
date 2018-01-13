@@ -358,7 +358,6 @@ C:\Users\EBF10\git\SwingSuit\SwingSuit\SwingSuit\bin\Debug\ru\Microsoft.ReportVi
 C:\Users\EBF10\git\SwingSuit\SwingSuit\SwingSuit\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
 C:\Users\EBF10\git\SwingSuit\SwingSuit\SwingSuit\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
 C:\Users\EBF10\git\SwingSuit\SwingSuit\SwingSuit\obj\Debug\VentanaMostrar\MostrarClente.baml
-C:\Users\EBF10\git\SwingSuit\SwingSuit\SwingSuit\obj\Debug\Ventanas\Window1.baml
 C:\Users\EBF10\git\SwingSuit\SwingSuit\SwingSuit\obj\Debug\VentanaAnadir\AnadirCliente.g.cs
 C:\Users\EBF10\git\SwingSuit\SwingSuit\SwingSuit\obj\Debug\VentanaAnadir\AnadirProducto.g.cs
 C:\Users\EBF10\git\SwingSuit\SwingSuit\SwingSuit\obj\Debug\VentanaAnadir\AnadirVenta.g.cs
@@ -374,7 +373,6 @@ C:\Users\EBF10\git\SwingSuit\SwingSuit\SwingSuit\obj\Debug\VentanaMostrar\Mostra
 C:\Users\EBF10\git\SwingSuit\SwingSuit\SwingSuit\obj\Debug\Ventanas\VentanaClientes.g.cs
 C:\Users\EBF10\git\SwingSuit\SwingSuit\SwingSuit\obj\Debug\Ventanas\VentanaInformes.g.cs
 C:\Users\EBF10\git\SwingSuit\SwingSuit\SwingSuit\obj\Debug\Ventanas\VentanaSobreNosotros.g.cs
-C:\Users\EBF10\git\SwingSuit\SwingSuit\SwingSuit\obj\Debug\Ventanas\Window1.g.cs
 C:\Users\EBF10\git\SwingSuit\SwingSuit\SwingSuit\obj\Debug\SwingSuit_Content.g.cs
 C:\Users\EBF10\git\SwingSuit\SwingSuit\SwingSuit\obj\Debug\VentanaAnadir\AnadirCliente.baml
 C:\Users\EBF10\git\SwingSuit\SwingSuit\SwingSuit\obj\Debug\VentanaAnadir\AnadirProducto.baml
@@ -390,3 +388,4 @@ C:\Users\EBF10\git\SwingSuit\SwingSuit\SwingSuit\obj\Debug\VentanaMostrar\Mostra
 C:\Users\EBF10\git\SwingSuit\SwingSuit\SwingSuit\obj\Debug\Ventanas\VentanaClientes.baml
 C:\Users\EBF10\git\SwingSuit\SwingSuit\SwingSuit\obj\Debug\Ventanas\VentanaInformes.baml
 C:\Users\EBF10\git\SwingSuit\SwingSuit\SwingSuit\obj\Debug\Ventanas\VentanaSobreNosotros.baml
+C:\Users\EBF10\git\SwingSuit\SwingSuit\SwingSuit\bin\Debug\CrystalDecisions.Data.AdoDotNetInterop.dll

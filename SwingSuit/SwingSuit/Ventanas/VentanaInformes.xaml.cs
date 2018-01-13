@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CrystalDecisions.CrystalReports.Engine;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -34,6 +35,13 @@ namespace SwingSuit.Ventanas
 
         private void Anadir_Click(object sender, RoutedEventArgs e)
         {
+            CrystalReport1 cr = new CrystalReport1();
+            ReportDocument cryRpt = new ReportDocument();
+            cryRpt.Load("PUT CRYSTAL REPORT PATH HERE\\CrystalReport1.rpt");
+            
+            cr.Refresh();
+
+
 
         }
     }

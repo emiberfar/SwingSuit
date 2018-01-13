@@ -70,11 +70,6 @@ namespace SwingSuit.Ventanas
             Close();
         }
 
-        private void Button_report(object sender, RoutedEventArgs e)
-        {
 
-            Window1 w = new Window1();
-            w.Show();
-        }
     }
 }
