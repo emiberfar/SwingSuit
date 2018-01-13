@@ -52,7 +52,7 @@
                 <ImageBrush/>
             </Button.OpacityMask>
         </Button>
-        <TextBox x:Name="id" HorizontalAlignment="Left" Height="31" Margin="211,100,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="61" Background="#FF595959" CaretBrush="#FF323232" SelectionBrush="Black" Foreground="White" FontFamily="Yu Gothic UI Light" FontSize="16" BorderBrush="#FF232323"/>
+        <TextBox x:Name="id" HorizontalAlignment="Left" Height="31" Margin="211,100,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="61" Background="#FF595959" CaretBrush="#FF323232" SelectionBrush="Black" Foreground="White" FontFamily="Yu Gothic UI Light" FontSize="16" BorderBrush="#FF232323" PreviewTextInput="id_PreviewTextInput"/>
         <TextBox x:Name="nombre" HorizontalAlignment="Left" Height="31" Margin="211,178,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="236" Background="#FF595959" CaretBrush="#FF323232" SelectionBrush="Black" Foreground="White" FontFamily="Yu Gothic UI Light" FontSize="16" BorderBrush="#FF232323"/>
         <TextBox x:Name="apellido" HorizontalAlignment="Left" Height="31" Margin="211,258,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="236" Background="#FF595959" CaretBrush="#FF323232" SelectionBrush="Black" Foreground="White" FontFamily="Yu Gothic UI Light" FontSize="16" BorderBrush="#FF232323"/>
         <TextBox x:Name="dni" HorizontalAlignment="Left" Height="31" Margin="211,337,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="236" Background="#FF595959" CaretBrush="#FF323232" SelectionBrush="Black" Foreground="White" FontFamily="Yu Gothic UI Light" FontSize="16" BorderBrush="#FF232323"/>

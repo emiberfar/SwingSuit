@@ -28,8 +28,8 @@ namespace SwingSuit.VentanaMostrar
         public MostrarClente()
         {
             InitializeComponent();
-
-            Conector.conexion();
+            
+            
 
         }
 
@@ -40,8 +40,9 @@ namespace SwingSuit.VentanaMostrar
             
             MySqlConnection conn = new MySqlConnection(Conector.conexion());
             MySqlCommand cmd = conn.CreateCommand();
-            cmd.CommandText = "SELECT Id,Nombre,Apellido,DNI,Direccion,Telefono FROM cliente";
             conn.Open();
+            cmd.CommandText = "SELECT Id,Nombre,Apellido,DNI,Direccion,Telefono FROM cliente";
+            
             mostrar.ItemsSource = cmd.ExecuteReader();
             
             

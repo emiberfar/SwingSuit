@@ -24,7 +24,7 @@ namespace SwingSuit.VentanaMostrar
         public MostrarProducto()
         {
             InitializeComponent();
-            Conector.conexion();
+            
         }
 
         private void Aceptar_Click(object sender, RoutedEventArgs e)

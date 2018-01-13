@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -36,11 +37,26 @@ namespace SwingSuit.VentanaEliminar
             ID = Convert.ToInt32(id.Text);
             Nombre = nombre.Text;
 
+            
             MySqlConnection conn = new MySqlConnection(Conector.conexion());
             MySqlCommand cmd = conn.CreateCommand();
+            cmd.Connection.Open();
             cmd.CommandText = "SELECT Id,Nombre,Apellido,DNI,Direccion,Telefono FROM cliente WHERE Id="+ID+" AND Nombre='"+Nombre+"';";
-            conn.Open();
+            
+            //conn.Open();
             mostrar.ItemsSource = cmd.ExecuteReader();
+
+            
+         
+
+            if (mostrar.Items.Count == 0) {
+
+                MessageBox.Show("No exite ese cliente");
+
+                id.Text = "";
+                nombre.Text = "";
+
+            }
             
         }
 
@@ -55,11 +71,14 @@ namespace SwingSuit.VentanaEliminar
 
 
             MySqlConnection conn = new MySqlConnection(Conector.conexion());
-            conn.Open();
+            //conn.Open();
             MySqlCommand cmd = conn.CreateCommand();
+            cmd.Connection.Open();
             cmd.CommandText = "DELETE FROM cliente WHERE Id =" +ID +" AND Nombre ='"+Nombre+ "';";
+            
             cmd.ExecuteReader();
             conn.Close();
+
         }
 
         private void atras_Click(object sender, RoutedEventArgs e)
@@ -68,6 +87,14 @@ namespace SwingSuit.VentanaEliminar
             mp.Show();
 
             Close();
+
+        }
+
+        private void id_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+
+            Regex regex = new Regex("[^0-9]+");
+            e.Handled = regex.IsMatch(e.Text);
 
         }
     }

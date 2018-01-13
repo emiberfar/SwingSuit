@@ -1,4 +1,5 @@
 ﻿using MySql.Data.MySqlClient;
+using SwingSuit.VentanaEliminar;
 using SwingSuit.Ventanas;
 using System;
 using System.Collections.Generic;
@@ -29,7 +30,7 @@ namespace SwingSuit.VentanaAnadir
         }
 
 
-
+        // añade un cliente a la base de datos
         private void Anadir_Click(object sender, RoutedEventArgs e)
         {
 
@@ -47,44 +48,87 @@ namespace SwingSuit.VentanaAnadir
 
 
             MySqlConnection conn = new MySqlConnection(Conector.conexion());
-            conn.Open();
             MySqlCommand cmd = conn.CreateCommand();
-            cmd.CommandText = "INSERT INTO cliente (Id,Nombre,Apellido,DNI,Direccion,Telefono) " +
-                "VALUES " + "(" + ID + "," + "'" + Nombre + "'," + "'" + Apellido + "'," + "'" + Dni + "'," + "'" + Direccion + "'," + "'" + Telefono + "');";
-            cmd.ExecuteReader();
-            conn.Close();
+
+
+            try
+            {
+
+                conn.Open();
+                cmd.CommandText = "INSERT INTO cliente (Id,Nombre,Apellido,DNI,Direccion,Telefono) " +
+                    "VALUES " + "(" + ID + "," + "'" + Nombre + "'," + "'" + Apellido + "'," + "'" + Dni + "'," + "'" + Direccion + "'," + "'" + Telefono + "');";
+                cmd.ExecuteReader();
+                conn.Close();
+
+
+                MessageBox.Show("Cliente añadido");
+                id.Text = "";
+                nombre.Text = "";
+                apellido.Text = "";
+                dni.Text = "";
+                direccion.Text = "";
+                telefono.Text = "";
+
+            }
+            catch (MySql.Data.MySqlClient.MySqlException)
+            {
+
+                //se en carga de cuando exista un error el cual ba a ser que el cliente ya exise en la bd
+                // te sale un mensaje
+
+
+                MessageBox.Show("Ese cliente que intenta añadir ya existe");
+                id.Text = "";
+                nombre.Text = "";
+                apellido.Text = "";
+                dni.Text = "";
+                direccion.Text = "";
+                telefono.Text = "";
+
+
+            }
+            catch (Exception ex) {
+
+                Console.Write("Error no controlado" + ex.Message);
+
+            }
+            
            
 
 
 
         }
 
+        //te lleva ala ventana de elimiar cliente
         private void borrar_Click(object sender, RoutedEventArgs e)
         {
 
+            EliminarCliente ec = new EliminarCliente();
+                ec.Show();
+            Close();
+            
+        }
 
-            int ID;
-            string Nombre, Apellido, Dni, Direccion, Telefono;
+        //se encarga de que se puedadn introducir solo numeros en el id
+        public void SoloNumeros(TextCompositionEventArgs e)
+        {
+            //se convierte a Ascci del la tecla presionada 
+            int ascci = Convert.ToInt32(Convert.ToChar(e.Text));
 
-            ID = Convert.ToInt32(id.Text);
-            Nombre = nombre.Text;
-            Apellido = apellido.Text;
-            Dni = dni.Text;
-            Direccion = direccion.Text;
-            Telefono = telefono.Text;
+            //verificamos que se encuentre en ese rango que son entre el 0 y el 9 
+            if (ascci >= 48 && ascci <= 57)
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                e.Handled = true;
+            }
+        }
 
-
-            MySqlConnection conn = new MySqlConnection(Conector.conexion());
-            conn.Open();
-            MySqlCommand cmd = conn.CreateCommand();
-            cmd.CommandText = "DELETE FROM cliente WHERE " + "id =" + ID + " AND " + "Nombre ='" + Nombre + "' AND " + "Apellido ='" + Apellido + "' AND DNI=" + "'" + Dni + "' AND Direccion=" + "'" + Direccion + "' AND Telefono=" + "'" + Telefono + "';";
-            cmd.ExecuteReader();
-            conn.Close();
-
-
-
-
-
+        private void id_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+            SoloNumeros(e);
         }
 
         private void atras_Click(object sender, RoutedEventArgs e)
@@ -96,5 +140,7 @@ namespace SwingSuit.VentanaAnadir
             Close();
 
         }
+
+
     }
 }

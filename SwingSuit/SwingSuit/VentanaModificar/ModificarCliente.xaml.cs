@@ -1,9 +1,11 @@
 ﻿using MySql.Data.MySqlClient;
+using SwingSuit.VentanaEliminar;
 using SwingSuit.Ventanas;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -43,15 +45,40 @@ namespace SwingSuit.VentanaModificar
             Direccion = direccion.Text;
             Telefono = telefono.Text;
 
+                MySqlConnection conn = new MySqlConnection(Conector.conexion());
+                conn.Open();
+                MySqlCommand cmd = conn.CreateCommand();
+                cmd.CommandText = "UPDATE cliente SET Nombre='" + Nombre + "', Apellido ='" + Apellido + "', DNI='" + Dni + "', Direccion='" + Direccion + "', Telefono='" + Telefono + "' WHERE Id=" + ID + ";";
+                cmd.ExecuteReader();
+                conn.Close();
 
-            MySqlConnection conn = new MySqlConnection(Conector.conexion());
-            conn.Open();
-            MySqlCommand cmd = conn.CreateCommand();
-            cmd.CommandText = "UPDATE cliente" +
-                " SET" + " Nombre = '" + Nombre + "' , " + "Apellido = '" + Apellido + "' AND DNI = " + "'" + Dni + "' AND Direccion = " + "'" + Direccion + "' AND Telefono = " + "'" + Telefono +"'"+
-                " WHERE " + "Id =" + ID + ";";
-            cmd.ExecuteReader();
-            conn.Close();
+            if (existe(ID))
+            {
+
+                MessageBox.Show("Cliente modificado");
+
+                id.Text = "";
+                nombre.Text = "";
+                apellido.Text = "";
+                dni.Text = "";
+                direccion.Text = "";
+                telefono.Text = "";
+
+
+            }
+            else
+            {
+                MessageBox.Show("Cliente inexistente");
+
+                id.Text = "";
+                nombre.Text = "";
+                apellido.Text = "";
+                dni.Text = "";
+                direccion.Text = "";
+                telefono.Text = "";
+
+            }
+
 
         }
 
@@ -59,22 +86,9 @@ namespace SwingSuit.VentanaModificar
         {
 
 
-            int ID;
-            string Nombre, Apellido, Dni, Direccion, Telefono;
-
-            ID = Convert.ToInt32(id.Text);
-            Nombre = nombre.Text;
-            Apellido = apellido.Text;
-            Dni = dni.Text;
-            Direccion = direccion.Text;
-            Telefono = telefono.Text;
-
-
-            MySqlConnection conn = new MySqlConnection(Conector.conexion());
-            conn.Open();
-            MySqlCommand cmd = conn.CreateCommand();
-            cmd.CommandText = "DELETE FROM cliente WHERE " + "Id =" + ID + " ," + "Nombre ='" + Nombre + "' , " + "Apellido ='" + Apellido + "' AND DNI=" + "'" + Dni + "' AND Direccion=" + "'" + Direccion + "' AND Telefono=" + "'" + Telefono + "';";
-            conn.Close();
+            EliminarCliente ec = new EliminarCliente();
+            ec.Show();
+            Close();
 
         }
 
@@ -85,6 +99,36 @@ namespace SwingSuit.VentanaModificar
             mp.Show();
 
             Close();
+
+        }
+
+        private Boolean existe(int ID)
+        {
+
+            MySqlConnection conn = new MySqlConnection(Conector.conexion());
+            MySqlCommand cmd = conn.CreateCommand();
+            conn.Open();
+            cmd.CommandText = "SELECT Id,Nombre,Apellido,DNI,Direccion,Telefono FROM cliente WHERE Id=@ID";
+            cmd.Parameters.AddWithValue("ID",ID);
+            int count = Convert.ToInt32(cmd.ExecuteScalar());
+            cmd.ExecuteReader();
+            conn.Close();
+
+           
+            if (count == 0)
+                return false;
+            else
+                return true;
+
+
+
+        }
+
+        private void id_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+
+            Regex regex = new Regex("[^0-9]+");
+            e.Handled = regex.IsMatch(e.Text);
 
         }
     }

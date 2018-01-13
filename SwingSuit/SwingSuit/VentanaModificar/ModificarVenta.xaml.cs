@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -48,6 +49,30 @@ namespace SwingSuit.VentanaModificar
             cmd.ExecuteReader();
             conn.Close();
 
+
+            if (existe(IdVenta))
+            {
+
+                MessageBox.Show("Venta modificado");
+
+                id.Text = "";
+                idCliente.Text = "";
+                idProducto.Text = "";
+                cantidad.Text = "";
+               
+
+            }
+            else
+            {
+                MessageBox.Show("Venta inexistente");
+
+                id.Text = "";
+                idCliente.Text = "";
+                idProducto.Text = "";
+                cantidad.Text = "";
+            }
+
+
         }
 
         private void borrar_Click(object sender, RoutedEventArgs e)
@@ -78,6 +103,35 @@ namespace SwingSuit.VentanaModificar
             mp.Show();
 
             Close();
+
+        }
+
+
+        private Boolean existe(int ID)
+        {
+
+            MySqlConnection conn = new MySqlConnection(Conector.conexion());
+            MySqlCommand cmd = conn.CreateCommand();
+            conn.Open();
+            cmd.CommandText = "SELECT IdVenta,IdProducto,IdCliente,Cantidad FROM venta WHERE IdVenta =@ID";
+            cmd.Parameters.AddWithValue("ID", ID);
+            int count = Convert.ToInt32(cmd.ExecuteScalar());
+            cmd.ExecuteReader();
+            conn.Close();
+
+
+            if (count == 0)
+                return false;
+            else
+                return true;
+
+        }
+
+        private void id_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+
+            Regex regex = new Regex("[^0-9]+");
+            e.Handled = regex.IsMatch(e.Text);
 
         }
     }

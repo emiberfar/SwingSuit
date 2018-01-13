@@ -1,8 +1,10 @@
 ﻿using MySql.Data.MySqlClient;
+using SwingSuit.VentanaEliminar;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -37,33 +39,47 @@ namespace SwingSuit.VentanaAnadir
             IdCliente = Convert.ToInt32(idCliente.Text);
             Cantidad = Convert.ToInt32(cantidad.Text);
 
-            MySqlConnection conn = new MySqlConnection(Conector.conexion());
-            conn.Open();
-            MySqlCommand cmd = conn.CreateCommand();
-            cmd.CommandText = "INSERT INTO venta (idVenta,IdProducto,IdCliente,Cantidad)" +
-                " VALUES ("+IdVenta+","+idProducto+","+IdCliente+","+Cantidad+");";
-            cmd.ExecuteReader();
-            conn.Close();
+            try
+            {
+                MySqlConnection conn = new MySqlConnection(Conector.conexion());
+                conn.Open();
+                MySqlCommand cmd = conn.CreateCommand();
+                cmd.CommandText = "INSERT INTO venta (idVenta,IdProducto,IdCliente,Cantidad)" +
+                    " VALUES (" + IdVenta + "," + idProducto + "," + IdCliente + "," + Cantidad + ");";
+                cmd.ExecuteReader();
+                conn.Close();
 
+            }
+            catch (MySql.Data.MySqlClient.MySqlException)
+            {
+
+                //se en carga de cuando exista un error el cual ba a ser que el cliente ya exise en la bd
+                // te sale un mensaje
+
+
+                System.Windows.MessageBox.Show("Esa venta que intenta añadir ya existe");
+                id.Text = "";
+                idProducto.Text = "";
+                idCliente.Text = "";
+                cantidad.Text = "";
+                
+
+
+            }
+            catch (Exception ex)
+            {
+
+                Console.Write("Error no controlado" + ex.Message);
+
+            }
         }
 
         private void borrar_Click(object sender, RoutedEventArgs e)
         {
 
-            int IdVenta, IdProducto, IdCliente, Cantidad;
-
-
-            IdVenta = Convert.ToInt32(id.Text);
-            IdProducto = Convert.ToInt32(idProducto.Text);
-            IdCliente = Convert.ToInt32(idCliente.Text);
-            Cantidad = Convert.ToInt32(cantidad.Text);
-
-
-            MySqlConnection conn = new MySqlConnection(Conector.conexion());
-            conn.Open();
-            MySqlCommand cmd = conn.CreateCommand();
-            cmd.CommandText = "DELETE FROM venta WHERE " + "IdVenta =" + IdVenta + " IdProducto = " + idProducto + " AND " + "IdCliente = " + IdCliente + " AND Cantidad = " + Cantidad + "; ";
-            conn.Close();
+            EliminarVenta ev = new EliminarVenta();
+            ev.Show();
+            Close();
 
         }
 
@@ -76,5 +92,16 @@ namespace SwingSuit.VentanaAnadir
             Close();
 
         }
+
+        private void id_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+
+            Regex regex = new Regex("[^0-9]+");
+            e.Handled = regex.IsMatch(e.Text);
+
+        }
+
+
+
     }
 }

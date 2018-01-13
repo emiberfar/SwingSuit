@@ -22,6 +22,9 @@ namespace SwingSuit
             builder.UserID = "root";
             builder.Password = "root";
             builder.Database = "banador";
+            
+          
+           
 
             return builder.ToString();
         }

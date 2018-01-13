@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -43,6 +44,15 @@ namespace SwingSuit.VentanaEliminar
             conn.Open();
             mostrar.ItemsSource = cmd.ExecuteReader();
 
+            if (mostrar.Items.Count == 0) {
+
+                MessageBox.Show("Ese Producto ya ha sido borrado");
+
+                id.Text = "";
+                marca.Text = "";
+
+            }
+
         }
 
         private void borrar_Click(object sender, RoutedEventArgs e)
@@ -69,6 +79,14 @@ namespace SwingSuit.VentanaEliminar
             mp.Show();
 
             Close();
+
+        }
+
+        private void id_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+
+            Regex regex = new Regex("[^0-9]+");
+            e.Handled = regex.IsMatch(e.Text);
 
         }
     }
