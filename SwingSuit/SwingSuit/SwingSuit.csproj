@@ -112,12 +112,6 @@
       <DependentUpon>CrystalReport1.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="MuestraCrys.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MuestraCrys.Designer.cs">
-      <DependentUpon>MuestraCrys.cs</DependentUpon>
-    </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
     <Compile Include="VentanaAnadir\AnadirCliente.xaml.cs">
       <DependentUpon>AnadirCliente.xaml</DependentUpon>

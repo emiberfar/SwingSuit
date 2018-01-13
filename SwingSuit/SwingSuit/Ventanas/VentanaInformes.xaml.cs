@@ -37,7 +37,7 @@ namespace SwingSuit.Ventanas
         {
             CrystalReport1 cr = new CrystalReport1();
             ReportDocument cryRpt = new ReportDocument();
-            cryRpt.Load("PUT CRYSTAL REPORT PATH HERE\\CrystalReport1.rpt");
+            cryRpt.Load("CrystalReport1.rpt");
             
             cr.Refresh();
 
