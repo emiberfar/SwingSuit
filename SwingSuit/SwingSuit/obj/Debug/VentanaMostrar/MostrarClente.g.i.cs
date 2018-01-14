@@ -9,6 +9,8 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+using RootLibrary.WPF.Localization;
+using SAPBusinessObjects.WPF.Viewer;
 using System;
 using System.Diagnostics;
 using System.Windows;
@@ -41,7 +43,7 @@ namespace SwingSuit.VentanaMostrar {
     public partial class MostrarClente : System.Windows.Window, System.Windows.Markup.IComponentConnector {
         
         
-        #line 12 "..\..\..\VentanaMostrar\MostrarClente.xaml"
+        #line 17 "..\..\..\VentanaMostrar\MostrarClente.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Button Aceptar;
         
@@ -49,17 +51,9 @@ namespace SwingSuit.VentanaMostrar {
         #line hidden
         
         
-        #line 25 "..\..\..\VentanaMostrar\MostrarClente.xaml"
+        #line 30 "..\..\..\VentanaMostrar\MostrarClente.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Button Atras;
-        
-        #line default
-        #line hidden
-        
-        
-        #line 38 "..\..\..\VentanaMostrar\MostrarClente.xaml"
-        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.DataGrid mostrar;
         
         #line default
         #line hidden
@@ -97,7 +91,7 @@ namespace SwingSuit.VentanaMostrar {
             case 1:
             this.Aceptar = ((System.Windows.Controls.Button)(target));
             
-            #line 12 "..\..\..\VentanaMostrar\MostrarClente.xaml"
+            #line 17 "..\..\..\VentanaMostrar\MostrarClente.xaml"
             this.Aceptar.Click += new System.Windows.RoutedEventHandler(this.Aceptar_Click);
             
             #line default
@@ -106,14 +100,11 @@ namespace SwingSuit.VentanaMostrar {
             case 2:
             this.Atras = ((System.Windows.Controls.Button)(target));
             
-            #line 25 "..\..\..\VentanaMostrar\MostrarClente.xaml"
+            #line 30 "..\..\..\VentanaMostrar\MostrarClente.xaml"
             this.Atras.Click += new System.Windows.RoutedEventHandler(this.Atras_Click);
             
             #line default
             #line hidden
-            return;
-            case 3:
-            this.mostrar = ((System.Windows.Controls.DataGrid)(target));
             return;
             }
             this._contentLoaded = true;

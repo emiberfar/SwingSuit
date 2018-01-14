@@ -9,6 +9,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+using RootLibrary.WPF.Localization;
 using SwingSuit.VentanaMostrar;
 using System;
 using System.Diagnostics;
